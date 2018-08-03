@@ -20,6 +20,7 @@ def gitPush():
 	gitCmd("git pl")
 	gitCmd("git ps")
 	print "git push done!"
+	print u"回车关闭...."
 	raw_input()
 if __name__ == '__main__':
 	try:
