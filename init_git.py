@@ -8,9 +8,9 @@ printPrompt = " done-------------"
 
 def donePrint(str = None):
 	if str:
-		print str+printPrompt
+		print (str+printPrompt)
 	else:
-		print printPrompt
+		print( printPrompt)
 
 def gitCmd(cmd):
 	os.system("" + cmd)
@@ -28,10 +28,10 @@ def initGitHub(proName):
 			gitCmd("git push -u origin master")
 			genIgnore()
 		except Exception,ex:
-			print 'init project Exception:\r\n'
-			print ex
+			print ('init project Exception:\r\n')
+			print (ex)
 	else:
-		print "No valide project"
+		print ("No valide project")
 
 def genIgnore():
 	gitCmd("echo #ignoreFiles >> .ignore")
@@ -48,21 +48,21 @@ def setAlias():
 	showMenuList()
 
 def showMenuList():
-	print "*"*spliterLen
-	print "  select item to do:"
-	print "  1 : initGitHub(weljun@sina.com)"
-	print "  2 : set git alias"
-	print "  3 : genIgnore"
-	print "  q : exit"
-	print "*"*spliterLen
-	print "input :",
+	print ("*"*spliterLen)
+	print ("  select item to do:")
+	print ("  1 : initGitHub(weljun@sina.com)")
+	print ("  2 : set git alias")
+	print ("  3 : genIgnore")
+	print ("  q : exit")
+	print ("*"*spliterLen)
+	print ("input :",)
 	
 if __name__ == '__main__':
 	showMenuList()
 	while True:
 		itemSelect = raw_input()
 		if itemSelect == '1':
-			print "input projectName:",
+			print( "input projectName:",)
 			pro_name = raw_input()
 			if pro_name:
 				initGitHub(pro_name)

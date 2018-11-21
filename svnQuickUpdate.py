@@ -9,11 +9,11 @@ def svnCmd(cmd):
 
 def svnUp():
 	svnCmd("svn update")
-	print "update done!"
+	print ("update done!")
 if __name__ == '__main__':
 	try:
 		svnUp()
-		print "enter to quit!"
+		print ("enter to quit!")
 		raw_input()
 	except Exception,ex:
-		print ex
+		print (ex)
