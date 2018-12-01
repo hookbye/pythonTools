@@ -1,6 +1,8 @@
 #create by guojun at 2018.11.10
 #file name : beginWork.py
 
+#this tool is designed for help working or doing something fun in life.
+
 #bugs while developping
 #1 os.system block the progress,when use many os.system commands,it turns that only close the first cmd,the next is the valide.
 # fixed: use prefix command 'start' to start a new command
