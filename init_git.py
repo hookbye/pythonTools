@@ -47,12 +47,18 @@ def setAlias():
 	donePrint()
 	showMenuList()
 
+def setDefaultUserEmail():
+	gitCmd('git config --global user.name hookbye')
+	gitCmd('git config --global user.email \'weljun@sina.com\'')
+	donePrint()
+	showMenuList()
 def showMenuList():
 	print ("*"*spliterLen)
 	print ("  select item to do:")
 	print ("  1 : initGitHub(weljun@sina.com)")
 	print ("  2 : set git alias")
-	print ("  3 : genIgnore")
+	print ("  3 : set  default userinfo")
+	print ("  4 : genIgnore")
 	print ("  q : exit")
 	print ("*"*spliterLen)
 	print ("input :",)
@@ -69,6 +75,8 @@ if __name__ == '__main__':
 		elif itemSelect == '2':
 			setAlias()
 		elif itemSelect == '3':
+			setDefaultUserEmail()
+		elif itemSelect == '4':
 			genIgnore()
 		elif itemSelect == "q":
 			sys.exit()
