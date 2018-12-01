@@ -3,6 +3,7 @@ import sys
 import os
 import webbrowser
 import subprocess
+import _thread
 evn_list = os.environ
 work_path = evn_list.get('WorkPath')
 # print(evn_list)
@@ -13,6 +14,7 @@ chrome_path = "\"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe\""
 mantis_url = "http://192.160.1.201:8080/mantis/my_view_page.php"
 wechat_path = "D:\\微信\\WeChat\\WeChat.exe"
 beginWorkPath = "C:\\Users\\Wangguojun\\Desktop\\pythonScripts\\camelWork\\todayTask.txt"
+work_quickshot = "explorer C:\\Users\\Wangguojun\\Desktop\\工作快照"
 
 # cmds = [sublime_text_path,chrome_path,wechat_path,unity_init_path]
 
@@ -25,20 +27,31 @@ noStart = False
 def useCmd(cmd,noStart=False):
 	if not noStart:
 		os.system("start " + cmd)
+		print("cmd done")
 	else:
 		os.system(cmd)
 	# os.Popen(cmd)
 	 # subprocess.Popen(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+def openUrl(url):
+	webbrowser.open(url,new=1,autoraise=True)
+
+def newThread(func,args,str=None):
+	_thread.start_new_thread(func,(args,False))
+	if str:
+		print(str)
 if __name__ == '__main__':
 	#打开办公软件
 	useCmd(unity_init_path)
-	print("unity 	done!")
+	# newThread(useCmd,unity_init_path,"unity 	done!")
 	#打开微信
 	useCmd(wechat_path)
-	print("wechat 	done!")
+	# newThread(useCmd,wechat_path,"wechat 	done!")
 	useCmd(beginWorkPath)
-	print("sublime 	done!")
+	# newThread(useCmd,beginWorkPath,"sublime 	done!")
+	newThread(useCmd,work_quickshot,"workdir   done")
+	# print("work snapshot done!")
 	#打开chrome mantis
-	# useCmd(chrome_path)
-	webbrowser.open(mantis_url,new=1,autoraise=True) 
+	openUrl(mantis_url)
 	print("mantis 	done!")
+	# _thread.start_new_thread(openUrl,(mantis_url,))
