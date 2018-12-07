@@ -27,7 +27,7 @@ def initGitHub(proName):
 			gitCmd("git remote add origin https://github.com/hookbye/" + proName)
 			gitCmd("git push -u origin master")
 			genIgnore()
-		except Exception,ex:
+		except Exception as ex:
 			print ('init project Exception:\r\n')
 			print (ex)
 	else:
