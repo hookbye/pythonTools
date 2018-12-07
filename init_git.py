@@ -60,10 +60,10 @@ def showMenuList():
 if __name__ == '__main__':
 	showMenuList()
 	while True:
-		itemSelect = raw_input()
+		itemSelect = input()
 		if itemSelect == '1':
 			print( "input projectName:",)
-			pro_name = raw_input()
+			pro_name = input()
 			if pro_name:
 				initGitHub(pro_name)
 		elif itemSelect == '2':
