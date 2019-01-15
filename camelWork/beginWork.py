@@ -15,6 +15,7 @@ mantis_url = "http://192.160.1.201:8080/mantis/my_view_page.php"
 wechat_path = "D:\\微信\\WeChat\\WeChat.exe"
 beginWorkPath = "C:\\Users\\Wangguojun\\Desktop\\pythonScripts\\camelWork\\todayTask.txt"
 work_quickshot = "explorer C:\\Users\\Wangguojun\\Desktop\\工作快照"
+screen_capture = 'C:\\Users\\Wangguojun\\Desktop\\SETUNA.exe'
 
 # cmds = [sublime_text_path,chrome_path,wechat_path,unity_init_path]
 
@@ -49,6 +50,7 @@ if __name__ == '__main__':
 	# newThread(useCmd,wechat_path,"wechat 	done!")
 	useCmd(beginWorkPath)
 	# newThread(useCmd,beginWorkPath,"sublime 	done!")
+	useCmd(screen_capture)
 	newThread(useCmd,work_quickshot,"workdir   done")
 	# print("work snapshot done!")
 	#打开chrome mantis

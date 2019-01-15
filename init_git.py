@@ -34,7 +34,7 @@ def initGitHub(proName):
 		print ("No valide project")
 
 def genIgnore():
-	gitCmd("echo #ignoreFiles >> .ignore")
+	gitCmd("echo #ignoreFiles >> .gitignore")
 	donePrint()
 	showMenuList()
 
