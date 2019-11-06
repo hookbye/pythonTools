@@ -16,8 +16,9 @@ def gitPush():
 	if commitInfo == "":
 		commitInfo = "\"quick commit for save\""
 	gitCmd("git ci -m "+commitInfo)
-	print ("git commit done!\n wait for push ...")
+	print ("git commit done!\n\n...wait for push ...")
 	gitCmd("git pl")
+	print("...begin to push...")
 	gitCmd("git ps")
 	print ("git push done!")
 	print (u"回车关闭....")
