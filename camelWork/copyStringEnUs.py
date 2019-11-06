@@ -3,7 +3,7 @@ import sys
 import os
 import shutil
 
-fileName = "string_zh_CN.txt"
+fileName = "string_en_US.txt"
 
 srcfilePath = "D:\\work\\planer\\config_tools\\GTGenerator\\"
 dstfilePath = "D:\\work\\dev_2017\\Assets\\HotRes\\Lua\\Locale\\"
@@ -11,7 +11,7 @@ dstfilePath = "D:\\work\\dev_2017\\Assets\\HotRes\\Lua\\Locale\\"
 def showMenuList():
 	print ("*"*10)
 	print ("  select item to do:")
-	print ("  y : commit text")
+	print ("  commit text")
 	print ("  q or any key to esc ")
 
 if __name__ == '__main__':
@@ -23,9 +23,9 @@ if __name__ == '__main__':
 	shutil.copyfile(srcfilePath+fileName,dstfilePath+fileName)
 	showMenuList()
 	inputA = input()
-	if inputA == "y":
+	if inputA != "q":
 		os.chdir(dstfilePath)
-		os.system("svn commit -m \"update text\"")
-		print("update string_zh_CN done!!")
+		os.system("svn commit -m \""+inputA+"\"")
+		print("update string_en_US done!!")
 	else:
 		sys.exit()
