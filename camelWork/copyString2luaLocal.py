@@ -8,8 +8,9 @@ zh_cnName = "string_zh_CN.txt"
 en_usName = "string_en_US.txt"
 officialZhcn = "Official_strings\\"
 srcfilePath = "D:\\work\\planer\\config_tools\\GTGenerator\\"
-dstfilePath = "D:\\work\\dev_2017\\Assets\\HotRes\\Lua\\Locale\\"
-openForlder = "start explorer \"D:\work\dev_2017\Assets\HotRes\Lua\Locale\""
+dstfilePath = "C:\\dev_2017\\Assets\\HotRes\\Lua\\Locale\\"
+openGenForlder = "start explorer \"D:\work\planer\config_tools\GTGenerator\""
+openForlder = "start explorer \"C:\dev_2017\Assets\HotRes\Lua\Locale\""
 def copyStringfiles(name):
 	list = os.listdir(srcfilePath)
 	for i in range(0,len(list)):
@@ -26,7 +27,8 @@ def copyStringfiles(name):
 def copyZhCn():
 	listPath = srcfilePath+officialZhcn
 	list = os.listdir(listPath)
-	lastDir = list[len(list)-1]
+	print(list)
+	lastDir = list[len(list)-4]
 	print(lastDir)
 	path = os.path.join(listPath,lastDir+"//"+zh_cnName)
 	print(zh_cnName)
@@ -47,6 +49,7 @@ if __name__ == '__main__':
 	os.system("svn up")
 	os.chdir(srcfilePath)
 	os.system("svn up")
+	os.system(openGenForlder)
 	# shutil.copyfile(srcfilePath+fileName,dstfilePath+fileName)
 	showMenuList()
 	# sys.exit()

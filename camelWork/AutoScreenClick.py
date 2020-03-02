@@ -30,9 +30,9 @@ if __name__ == "__main__":
     # thread1 = threading.Thread(target=pythoncom.PumpMessages, args=("thread 1",))
     # thread1.start()
     for i in range(1,20):
-        LeftClick(-1920+745,830)
-        time.sleep(1)
-        # LeftClick(-1920+850,606)
+        LeftClick(-1920+720,620)
+        time.sleep(2)
+        LeftClick(-1920+600,950)
         # time.sleep(0.1)
         print("click ....",i)
         

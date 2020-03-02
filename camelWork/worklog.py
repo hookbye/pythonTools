@@ -11,7 +11,7 @@ todayFile = "todayLog.txt"
 
 
 svnPath = "D:\\work\\dev_2017\\Assets\\HotRes"
-logPath = "C:\\Users\\Wangguojun\\Desktop"
+logPath = "C:\\Users\\Wangguojun\\Desktop\\passwords"
 
 def showMenuList():
 	print ("*"*10)

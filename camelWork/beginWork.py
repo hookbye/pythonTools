@@ -8,13 +8,13 @@ evn_list = os.environ
 work_path = evn_list.get('WorkPath')
 # print(evn_list)
 # print (work_path)
-unity_init_path = "D:\\work\\dev_2017\\Assets\\Scenes\\InitialScene.unity"
+unity_init_path = "C:\\dev_2017\\Assets\\Scenes\\InitialScene.unity"
 sublime_text_path = "\"C:\Program Files\Sublime Text 3\sublime_text.exe \""
 chrome_path = "\"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe\""
 mantis_url = "http://192.160.1.201:8080/mantis/my_view_page.php"
 wechat_path = "D:\\微信\\WeChat\\WeChat.exe"
 beginWorkPath = "\"C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.1.1\\bin\\idea64.exe C:\\Users\\Wangguojun\\Desktop\\pythonScripts\\camelWork\\todayTask.txt\"" #"C:\\Users\\Wangguojun\\Desktop\\pythonScripts\\camelWork\\todayTask.txt"
-work_codePath = "D:\\work\\dev_2017\\Assets\\HotRes"
+work_codePath = "C:\\dev_2017\\Assets\\HotRes"
 screen_capture = 'C:\\Users\\Wangguojun\\Desktop\\SETUNA.exe'
 
 # cmds = [sublime_text_path,chrome_path,wechat_path,unity_init_path]
@@ -56,4 +56,4 @@ if __name__ == '__main__':
 	print("mantis 	done!")
 	# _thread.start_new_thread(openUrl,(mantis_url,))
 	# useCmd(beginWorkPath)
-	# newThread(useCmd,beginWorkPath,"sublime 	done!")
+	# newThread(useCmd,OpenUnityWith17_1_4,"sublime 	done!")
