@@ -16,6 +16,7 @@ wechat_path = "D:\\微信\\WeChat\\WeChat.exe"
 beginWorkPath = "\"C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.1.1\\bin\\idea64.exe C:\\Users\\Wangguojun\\Desktop\\pythonScripts\\camelWork\\todayTask.txt\"" #"C:\\Users\\Wangguojun\\Desktop\\pythonScripts\\camelWork\\todayTask.txt"
 work_codePath = "C:\\dev_2017\\Assets\\HotRes"
 screen_capture = 'C:\\Users\\Wangguojun\\Desktop\\SETUNA.exe'
+IDEAPath = "\"C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.1\bin\idea64.exe\""
 
 # cmds = [sublime_text_path,chrome_path,wechat_path,unity_init_path]
 
@@ -57,3 +58,4 @@ if __name__ == '__main__':
 	# _thread.start_new_thread(openUrl,(mantis_url,))
 	# useCmd(beginWorkPath)
 	# newThread(useCmd,OpenUnityWith17_1_4,"sublime 	done!")
+	useCmd(IDEAPath)

@@ -6,7 +6,7 @@ import shutil
 fileName = "string_zh_CN.txt"
 
 srcfilePath = "D:\\work\\planer\\config_tools\\GTGenerator\\"
-dstfilePath = "D:\\work\\dev_2017\\Assets\\HotRes\\Lua\\Locale\\"
+dstfilePath = "C:\\dev_2017\\Assets\\HotRes\\Lua\\Locale\\"
 
 def showMenuList():
 	print ("*"*10)
