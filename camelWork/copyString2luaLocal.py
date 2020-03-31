@@ -8,9 +8,9 @@ zh_cnName = "string_zh_CN.txt"
 en_usName = "string_en_US.txt"
 officialZhcn = "Official_strings\\"
 srcfilePath = "D:\\work\\planer\\config_tools\\GTGenerator\\"
-dstfilePath = "C:\\dev_2017\\Assets\\HotRes\\Lua\\Locale\\"
+dstfilePath = "C:\\dev2017_4\\dev\\Assets\\HotRes\\Lua\\Locale\\"
 openGenForlder = "start explorer \"D:\work\planer\config_tools\GTGenerator\""
-openForlder = "start explorer \"C:\dev_2017\Assets\HotRes\Lua\Locale\""
+openForlder = "start explorer \"C:\dev2017_4\dev\Assets\HotRes\Lua\Locale\""
 def copyStringfiles(name):
 	list = os.listdir(srcfilePath)
 	for i in range(0,len(list)):

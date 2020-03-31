@@ -18,7 +18,7 @@ work_codePath = "C:\\dev_2017\\Assets\\HotRes"
 screen_capture = 'C:\\Users\\Wangguojun\\Desktop\\SETUNA.exe'
 IDEAPath = "\"C:\Program Files\JetBrains\Intelli~1\bin\idea64.exe\""
 
-openUnityProjectCmd = u"C:\\Progra~1\\Unity\\Editor\\Unity.exe  -projectPath C:\\dev_2017"
+openUnityProjectCmd = u"C:\\Progra~1\\Unity17_434\\Editor\\Unity.exe  -projectPath C:\\dev2017_4\\dev"
 
 # cmds = [sublime_text_path,chrome_path,wechat_path,unity_init_path]
 
