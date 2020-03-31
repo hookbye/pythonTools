@@ -16,7 +16,9 @@ wechat_path = "D:\\微信\\WeChat\\WeChat.exe"
 beginWorkPath = "\"C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.1.1\\bin\\idea64.exe C:\\Users\\Wangguojun\\Desktop\\pythonScripts\\camelWork\\todayTask.txt\"" #"C:\\Users\\Wangguojun\\Desktop\\pythonScripts\\camelWork\\todayTask.txt"
 work_codePath = "C:\\dev_2017\\Assets\\HotRes"
 screen_capture = 'C:\\Users\\Wangguojun\\Desktop\\SETUNA.exe'
-IDEAPath = "\"C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.1\bin\idea64.exe\""
+IDEAPath = "\"C:\Program Files\JetBrains\Intelli~1\bin\idea64.exe\""
+
+openUnityProjectCmd = u"C:\\Progra~1\\Unity\\Editor\\Unity.exe  -projectPath C:\\dev_2017"
 
 # cmds = [sublime_text_path,chrome_path,wechat_path,unity_init_path]
 
@@ -44,7 +46,7 @@ def newThread(func,args,str=None):
 		print(str)
 if __name__ == '__main__':
 	#打开办公软件
-	useCmd(unity_init_path)
+	useCmd(openUnityProjectCmd)
 	# newThread(useCmd,unity_init_path,"unity 	done!")
 	#打开微信
 	useCmd(wechat_path)

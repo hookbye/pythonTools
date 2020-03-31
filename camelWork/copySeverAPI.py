@@ -6,7 +6,7 @@ import shutil
 fileName = "ServerAPI.txt"
 
 srcfilePath = "D:\\work\\client\\schema\\"
-dstfilePath = "D:\\work\\dev_2017\\Assets\\HotRes\\Lua\\Network\\"
+dstfilePath = "C:\\dev_2017\\Assets\\HotRes\\Lua\\Network\\"
 
 def showMenuList():
 	print ("*"*10)

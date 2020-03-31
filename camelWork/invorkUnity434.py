@@ -7,9 +7,9 @@ import _thread
 evn_list = os.environ
 work_path = evn_list.get('WorkPath')
 
-unity_init_path = u"C:\\dev_2017\\Assets\\Scenes\\InitialScene.unity"
+unity_init_path = u"C:\\dev2017_4\\dev\\Assets\\Scenes\\InitialScene.unity"
 # unity_exe_path = "C:\Program Files\Unity\Editor\exe"
-openProjectCmd = u"C:\\Progra~1\\Unity\\Editor\\Unity.exe  -projectPath C:\\dev_2017"
+openProjectCmd = u"C:\\Progra~1\\Unity17_434\\Editor\\Unity.exe  -projectPath C:\\dev2017_4\\dev"
 # cmds = [sublime_text_path,chrome_path,wechat_path,unity_init_path]
 
 # def contractCmd(cmd1,cmd2):
