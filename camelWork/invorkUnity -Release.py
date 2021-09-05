@@ -7,11 +7,8 @@ import _thread
 evn_list = os.environ
 work_path = evn_list.get('WorkPath')
 
-unity_init_path = u"C:\\Users\\hook\\Documents\\WAO_DEV_2017_434"
-# unity_exe_path = "C:\Program Files\Unity\Editor\exe"
-# "C:\Users\hook\Documents\WAO_DEV_2017_434"
-#openProjectCmd = u"C:\\Progra~1\\Unity17_434\\Editor\\Unity.exe  -projectPath C:\\dev2017_4\\dev"
-openProjectCmd = u"C:\\Progra~1\\Unity\\Editor\\Unity.exe  -projectPath C:\\Users\\hook\\Documents\\WAO_DEV_2017_434\\dev"
+unity_init_path = "C:\\Users\\hook\\Documents\\release_2017.1.4\\Assets\\Scenes\\InitialScene.unity"
+
 # cmds = [sublime_text_path,chrome_path,wechat_path,unity_init_path]
 
 # def contractCmd(cmd1,cmd2):
@@ -38,9 +35,6 @@ def newThread(func,args,str=None):
 		print(str)
 if __name__ == '__main__':
 	#打开办公软件
-	# useCmd(unity_init_path)
-	useCmd("chdir "+unity_init_path)
-	useCmd("svn up")
-	useCmd(openProjectCmd)
+	useCmd(unity_init_path)
 	# os.system(OpenUnityWith17_1_4)
 	# newThread(useCmd,OpenUnityWith17_1_4,"sublime 	done!")
